@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Temperature Conversion</h1>
+
+      <form action="">
+        <div class="input-area">
+          <div class="input-group">
+            <label class="temperature1"></label>
+            <input type="text" class="input_temperature" />
+          </div>
+          <div class="input-group">
+            <label class="temperature2"></label>
+            <input type="text" class="output_temperature" disabled />
+          </div>
+        </div>
+
+        <div class="select_conversion">
+          <select name="initialTemperature" class="initial_temperature">
+            <option value="">From</option>
+            <option value="celcius">Celcius (C)</option>
+            <option value="fahrenheit">Fahrenheit (F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankine (R)</option>
+          </select>
+          <select name="finalTemperature" class="final_temperature">
+            <option value="">To</option>
+            <option value="celcius">Celcius (C)</option>
+            <option value="fahrenheit">Fahrenheit (F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankine (R)</option>
+          </select>
+        </div>
+
+        <div class="btn_calculate">Calculate</div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
